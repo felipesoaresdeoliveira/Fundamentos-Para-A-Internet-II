@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Chedid</title>
+    </h:head>
+    <h:body>
+        <h2>Calcular</h2>
+        <br/>
+        <h:form>
+            <h:panelGrid columns="2">
+                x: <h:inputText value="#{main.x}" size="30"/>
+                y: <h:inputText value="#{main.y}" size="10"/>
+                z: <h:inputText value="#{main.z}" size="10"/>
+
+                <h:commandButton value="Calcular"
+                                 actionListener="#{main.calcular()}"/>
+            </h:panelGrid>
+            <h:outputText value="Resultado: #{main.result}"/>
+        </h:form>
+    </h:body>
+</html>
